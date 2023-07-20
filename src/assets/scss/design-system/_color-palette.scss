@@ -1,0 +1,70 @@
+/* Color classes */
+@each $name, $color in $base-colors {
+  .has-#{$name}-color,
+  .color-#{$name} {
+    color: map-get($color, "base") !important;
+  }
+  .bg-color-#{$name} {
+    background-color: map-get($color, "base") !important;
+  }
+}
+
+@each $name, $color in $primary-colors {
+  .has-#{$name}-color,
+  .color-#{$name} {
+    color: map-get($color, "base") !important;
+  }
+  .bg-color-#{$name} {
+    background-color: map-get($color, "base") !important;
+  }
+}
+
+@each $name, $color in $neutral-colors {
+  .has-#{$name}-color,
+  .color-#{$name} {
+    color: map-get($color, "base") !important;
+  }
+  .bg-color-#{$name} {
+    background-color: map-get($color, "base") !important;
+  }
+}
+
+@each $name, $color in $semintic-g1-colors {
+  .has-#{$name}-color,
+  .color-#{$name} {
+    color: map-get($color, "base") !important;
+  }
+  .bg-color-#{$name} {
+    background-color: map-get($color, "base") !important;
+  }
+}
+
+@each $name, $color in $semintic-g2-colors {
+  .has-#{$name}-color,
+  .color-#{$name} {
+    color: map-get($color, "base") !important;
+  }
+  .bg-color-#{$name} {
+    background-color: map-get($color, "base") !important;
+  }
+}
+
+@each $name, $color in $semintic-g3-colors {
+  .has-#{$name}-color,
+  .color-#{$name} {
+    color: map-get($color, "base") !important;
+  }
+  .bg-color-#{$name} {
+    background-color: map-get($color, "base") !important;
+  }
+}
+
+@each $name, $color in $semintic-g4-colors {
+  .has-#{$name}-color,
+  .color-#{$name} {
+    color: map-get($color, "base") !important;
+  }
+  .bg-color-#{$name} {
+    background-color: map-get($color, "base") !important;
+  }
+}

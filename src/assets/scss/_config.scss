@@ -1,0 +1,338 @@
+/* 
+ * color palettes
+ */
+
+/* Base colors */
+$base: #ffffff;
+$base-900: #101828;
+$base-invert: #000000;
+$base-colors: (
+  "base": (
+    base: $base,
+    contrast: #ffffff
+  ),
+  "base-900": (
+    base: $base-900,
+    contrast: #ffffff
+  ),
+  "base-invert": (
+    base: $base-invert,
+    contrast: #ffffff
+  ),
+);
+
+/* Primary */
+$primary-25: #F5FAFF;
+$primary-50: #EFF8FF;
+$primary-100: #D1E9FF;
+$primary-200: #B2DDFF;
+$primary-300: #84CAFF;
+$primary-400: #53B1FD;
+$primary-500: #2E90FA;
+$primary-600: #1570EF;
+$primary-700: #175CD3;
+$primary-800: #1849A9;
+$primary-900: #194185;
+$primary-colors: (
+  "primary-25": (
+    base: $primary-25,
+    contrast: #ffffff
+  ),
+  "primary-50": (
+    base: $primary-50,
+    contrast: #ffffff
+  ),
+  "primary-100": (
+    base: $primary-100,
+    contrast: #ffffff
+  ),
+  "primary-200": (
+    base: $primary-200,
+    contrast: #ffffff
+  ),
+  "primary-300": (
+    base: $primary-300,
+    contrast: #ffffff
+  ),
+  "primary-400": (
+    base: $primary-400,
+    contrast: #ffffff
+  ),
+  "primary-500": (
+    base: $primary-500,
+    contrast: #ffffff
+  ),
+  "primary-600": (
+    base: $primary-600,
+    contrast: #ffffff
+  ),
+  "primary-700": (
+    base: $primary-700,
+    contrast: #ffffff
+  ),
+  "primary-800": (
+    base: $primary-800,
+    contrast: #ffffff
+  ),
+  "primary-900": (
+    base: $primary-900,
+    contrast: #ffffff
+  )
+);
+
+/* Neutral */
+$neutral-25: #FCFCFD;
+$neutral-50: #F9FAFB;
+$neutral-100: #F2F4F7;
+$neutral-200: #EAECF0;
+$neutral-300: #D0D5DD;
+$neutral-400: #98A2B3;
+$neutral-500: #667085;
+$neutral-600: #475467;
+$neutral-700: #344054;
+$neutral-800: #1D2939;
+$neutral-900: #101828;
+$neutral-colors: (
+  "neutral-25": (
+    base: $neutral-25,
+    contrast: #ffffff
+  ),
+  "neutral-50": (
+    base: $neutral-50,
+    contrast: #ffffff
+  ),
+  "neutral-100": (
+    base: $neutral-100,
+    contrast: #ffffff
+  ),
+  "neutral-200": (
+    base: $neutral-200,
+    contrast: #ffffff
+  ),
+  "neutral-300": (
+    base: $neutral-300,
+    contrast: #ffffff
+  ),
+  "neutral-400": (
+    base: $neutral-400,
+    contrast: #ffffff
+  ),
+  "neutral-500": (
+    base: $neutral-500,
+    contrast: #ffffff
+  ),
+  "neutral-600": (
+    base: $neutral-600,
+    contrast: #ffffff
+  ),
+  "neutral-700": (
+    base: $neutral-700,
+    contrast: #ffffff
+  ),
+  "neutral-800": (
+    base: $neutral-800,
+    contrast: #ffffff
+  ),
+  "neutral-900": (
+    base: $neutral-900,
+    contrast: #ffffff
+  )
+);
+
+/* Semintic group one */
+$semintic-g1-50: #EFF8FF;
+$semintic-g1-600: #1570EF;
+$semintic-g1-700: #175CD3;
+$semintic-g1-900: #194185;
+$semintic-g1-colors: (
+  "semintic-g1-50": (
+    base: $semintic-g1-50,
+    contrast: #ffffff
+  ),
+  "semintic-g1-600": (
+    base: $semintic-g1-600,
+    contrast: #ffffff
+  ),
+  "semintic-g1-700": (
+    base: $semintic-g1-700,
+    contrast: #ffffff
+  ),
+  "semintic-g1-900": (
+    base: $semintic-g1-900,
+    contrast: #ffffff
+  )
+);
+
+/* Semintic group two */
+$semintic-g2-25: #FFFBFA;
+$semintic-g2-400: #F97066;
+$semintic-g2-600: #D92D20;
+$semintic-g2-900: #7A271A;
+$semintic-g2-colors: (
+  "semintic-g2-25": (
+    base: $semintic-g2-25,
+    contrast: #ffffff
+  ),
+  "semintic-g2-400": (
+    base: $semintic-g2-400,
+    contrast: #ffffff
+  ),
+  "semintic-g2-600": (
+    base: $semintic-g2-600,
+    contrast: #ffffff
+  ),
+  "semintic-g2-900": (
+    base: $semintic-g2-900,
+    contrast: #ffffff
+  )
+);
+
+/* Semintic group three */
+$semintic-g3-50: #FFFAEB;
+$semintic-g3-500: #F79009;
+$semintic-g3-600: #DC6803;
+$semintic-g3-700: #B54708;
+$semintic-g3-colors: (
+  "semintic-g3-50": (
+    base: $semintic-g3-50,
+    contrast: #ffffff
+  ),
+  "semintic-g3-500": (
+    base: $semintic-g3-500,
+    contrast: #ffffff
+  ),
+  "semintic-g3-600": (
+    base: $semintic-g3-600,
+    contrast: #ffffff
+  ),
+  "semintic-g3-700": (
+    base: $semintic-g3-700,
+    contrast: #ffffff
+  )
+);
+
+/* Semintic group four */
+$semintic-g4-50: #ECFDF3;
+$semintic-g4-300: #6CE9A6;
+$semintic-g4-500: #12B76A;
+$semintic-g4-700: #027A48;
+$semintic-g4-colors: (
+  "semintic-g4-50": (
+    base: $semintic-g4-50,
+    contrast: #ffffff
+  ),
+  "semintic-g4-300": (
+    base: $semintic-g4-300,
+    contrast: #ffffff
+  ),
+  "semintic-g4-500": (
+    base: $semintic-g4-500,
+    contrast: #ffffff
+  ),
+  "semintic-g4-700": (
+    base: $semintic-g4-700,
+    contrast: #ffffff
+  )
+);
+
+:root {
+  @each $name, $color in $base-colors {
+    --color-#{$name}: #{map-get($color, "base")};
+  }
+
+  @each $name, $color in $primary-colors {
+    --color-#{$name}: #{map-get($color, "base")};
+  }
+
+  @each $name, $color in $neutral-colors {
+    --color-#{$name}: #{map-get($color, "base")};
+  }
+
+  @each $name, $color in $semintic-g1-colors {
+    --color-#{$name}: #{map-get($color, "base")};
+  }
+
+  @each $name, $color in $semintic-g2-colors {
+    --color-#{$name}: #{map-get($color, "base")};
+  }
+
+  @each $name, $color in $semintic-g3-colors {
+    --color-#{$name}: #{map-get($color, "base")};
+  }
+
+  @each $name, $color in $semintic-g4-colors {
+    --color-#{$name}: #{map-get($color, "base")};
+  }
+}
+
+/* Box shadows */
+$shadow-xs: 0px 1px 2px rgba(16, 24, 40, 0.05);
+$shadow-sm: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+$shadow-md: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+$shadow-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+$shadow-xl: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+$shadow-2xl: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+$shadow-3xl: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+
+/* 
+ * Grid configuration
+ */
+$enable-grid-classes: true;
+
+/* 
+ * Grid breakpoints
+ * - Define the minimum dimensions at which your layout will change,
+ * - adapting to different screen sizes, for use in media queries.
+ */
+$grid-breakpoints: (
+  mb: 0,
+  tb: 768px,
+  dt: 1024px,
+  wd: 1200px
+);
+
+/* 
+ * Grid containers
+ * - Define the maximum width of `.container` for different screen sizes.
+ */
+$container-max-widths: (
+  tb: 704px,
+  dt: 920px,
+  wd: 968px
+);
+
+/* 
+ * Grid container paddings
+ * - Define the maximum padding of `.container` for different screen sizes.
+ */
+$container-paddings: (
+  mb: 32px,
+  tb: 16px
+);
+
+/* 
+ * Grid columns
+ * - Set the number of columns and specify the width of the gutters.
+ */
+$grid-columns: 12;
+$grid-gutter-width: 32px;
+$grid-mobile-gutter-width: 16px;
+
+/* 
+ * Spacer
+ * - Set the margin and padding helper classes
+ */
+$spacer-start: 0;
+$spacer-end: 40;
+$spacer-unit: px;
+
+$spacer-important: true;
+$spacer-arithmetic: true;
+$spacer-arithmetic-sequence: 4;
+
+$spacer-directions: (
+  top: t,
+  right: r,
+  bottom: b,
+  left: l
+);

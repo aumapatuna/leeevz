@@ -1,0 +1,363 @@
+.btn {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .5s ease;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 1px; //temporary
+
+  label {
+    cursor: pointer;
+  }
+
+  /* Defining background colors */ 
+  &__default {
+    background-color: var(--color-semintic-g1-600);
+  }
+
+  &__color-primary {
+    background-color: var(--color-semintic-g1-600);
+  }
+
+  /* SVG icon & size */
+  svg {
+    height: 16px;
+    overflow: visible;
+    border-radius: 16px;
+    box-sizing: border-box !important;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  } 
+
+  /* Global sizes */ 
+  &__small {
+    padding: 8px 14px 8px 42px;
+
+    svg {
+      left: 16px;
+    }
+  }
+
+  &__medium {
+    padding: 10px 16px 10px 44px;
+
+    svg {
+      left: 18px;
+    }
+  }
+
+  &__large {
+    padding: 10px 18px 10px 46px;
+    font-size: 16px;
+    line-height: 24px;
+
+    svg {
+      left: 20px;
+    }
+  }
+
+  /* Right image button styles */ 
+  &__right-image {
+    &__small {
+      padding: 8px 42px 8px 14px;
+  
+      svg {
+        right: 16px;
+      }
+    }
+  
+    &__medium {
+      padding: 10px 44px 10px 16px;
+  
+      svg {
+        right: 18px;
+      }
+    }
+  
+    &__large {
+      padding: 10px 46px 10px 18px;
+      font-size: 16px;
+      line-height: 24px;
+  
+      svg {
+        right: 20px;
+      }
+    }
+  }
+
+  /* Icon visibility */ 
+  &__plane {
+    svg {
+      display: none;
+    }
+
+    &--small {
+      padding: 8px 14px;
+    }
+
+    &--medium {
+      padding: 10px 16px;
+    }
+
+    &--large {
+      padding: 10px 18px;
+    }
+  }
+
+  /* Icon positions */ 
+  &__left-image {
+    position: relative;
+  }
+
+  &__right-image {
+    position: relative;
+
+    svg {
+      left: auto;
+      right: 16px;
+    }
+
+    &--small {
+      padding: 8px 42px 8px 14px;
+    }
+
+    &--medium {
+      padding: 10px 44px 10px 16px;
+
+      svg {
+        right: 18px;
+      }
+    }
+
+    &--large {
+      padding: 10px 46px 10px 18px;
+
+      svg {
+        right: 20px;
+      }
+    }
+  }
+
+  /* Varients - Primary plane */
+  &__primary {
+    background-color: var(--color-semintic-g1-600);
+    color: var(--color-base);
+    font-weight: 500;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border: 1px solid var(--color-primary-600);
+
+    &:hover {
+      background-color: var(--color-semintic-g1-700);
+      border: 1px solid var(--color-primary-700);
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 2px var(--color-base), 0px 0px 0px 4px var(--color-semintic-g1-600);
+      border: 1px solid var(--color-semintic-g1-600);
+    }
+
+    &--disabled {
+      background-color: var(--color-primary-200);
+      border: 1px solid var(--color-primary-200);
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
+  /* Varients - Secondary plane */
+  &__secondary {
+    background-color: var(--color-primary-25);
+    color: var(--color-primary-600);
+    font-weight: 500;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border: 1px solid var(--color-primary-25);
+
+    svg {
+      border: 2px solid var(--color-primary-600);
+    }
+
+    &:hover {
+      background-color: var(--color-primary-100);
+      border: 1px solid var(--color-primary-100);
+    }
+
+    &:focus {
+      background-color: var(--color-semintic-g1-50);
+      box-shadow: 0px 0px 0px 2px var(--color-base), 0px 0px 0px 4px var(--color-semintic-g1-600);
+      border: 1px solid var(--color-semintic-g1-50);
+    }
+
+    &--disabled {
+      color: var(--color-primary-300);
+      background-color: var(--color-primary-25);
+      border: 1px solid var(--color-primary-25);
+      cursor: default;
+      pointer-events: none;
+
+      svg {
+        border: 2px solid var(--color-primary-25);
+      }
+    }
+  }
+
+  /* Varients - Secondary gray plane */
+  &__secondary-gray {
+    background-color: var(--color-base);
+    color: var(--color-neutral-700);
+    font-weight: 500;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border: 1px solid #D0D5DD;
+
+    svg {
+      border: 2px solid var(--color-primary-25);
+    }
+
+    &:hover {
+      color: var(--color-neutral-800);
+      background-color: var(--color-base);
+      border: 1px solid #D0D5DD;
+    }
+
+    &:focus {
+      background-color: var(--color-base);
+      box-shadow: 0px 0px 0px 2px var(--color-base), 0px 0px 0px 4px #D8D8D8;
+      border: 1px solid #D0D5DD;
+    }
+
+    &--disabled {
+      color: #D0D5DD;
+      background-color: var(--color-base);
+      border: 1px solid var(--color-neutral-200);
+      cursor: default;
+      pointer-events: none;
+
+      svg {
+        border: 2px solid var(--color-primary-25);
+      }
+    }
+  }
+
+  /* Varients - Secondary white plane */
+  &__secondary-white {
+    background-color: var(--color-base);
+    color: var(--color-primary-700);
+    font-weight: 500;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border: 1px solid transparent;
+
+    svg {
+      border: 2px solid var(--color-primary-25);
+    }
+
+    &:hover {
+      color: var(--color-primary-700);
+      background-color: var(--color-primary-50);
+      border: 1px solid transparent;
+    }
+
+    &:focus {
+      background-color: var(--color-base);
+      box-shadow: 0px 0px 0px 2px var(--color-base), 0px 0px 0px 4px var(--color-primary-600);
+      border: 1px solid transparent;
+    }
+
+    &--disabled {
+      color: #D0D5DD;
+      background-color: var(--color-base);
+      border: 1px solid transparent;
+      cursor: default;
+      pointer-events: none;
+
+      svg {
+        border: 2px solid var(--color-primary-25);
+      }
+    }
+  }
+
+  /* Varients - Secondary red plane */
+  &__secondary-red {
+    background-color: var(--color-semintic-g2-600);
+    color: var(--color-base);
+    font-weight: 500;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border: 1px solid var(--color-semintic-g2-600);
+
+    svg {
+      border: 2px solid var(--color-primary-25); 
+    }
+
+    &:hover {
+      color: var(--color-base);
+      background-color: var(--color-semintic-g2-600);
+      border: 1px solid var(--color-semintic-g2-600);
+    }
+
+    &:focus {
+      background-color: var(--color-semintic-g2-600);
+      box-shadow: 0px 0px 0px 2px var(--color-base), 0px 0px 0px 4px var(--color-semintic-g2-600);
+      border: 1px solid var(--color-semintic-g2-600);
+    }
+
+    &--disabled {
+      color: var(--color-base);
+      background-color: var(--color-semintic-g2-25);
+      border: 1px solid var(--color-semintic-g2-25);
+      cursor: default;
+      pointer-events: none;
+
+      svg {
+        border: 2px solid var(--color-primary-25); 
+      }
+    }
+  }
+
+  /* Varients - Secondary neutral plane */
+  &__secondary-neutral {
+    background-color: var(--color-base);
+    color: var(--color-semintic-g2-600);
+    font-weight: 500;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border: 1px solid var(--color-semintic-g2-400);
+
+    svg {
+      border: 2px solid var(--color-primary-25); 
+    }
+
+    &:hover {
+      color: var(--color-semintic-g2-900);
+      background-color: var(--color-semintic-g2-25);
+      border: 1px solid var(--color-semintic-g2-400);
+    }
+
+    &:focus {
+      background-color: var(--color-base);
+      box-shadow: 0px 0px 0px 2px var(--color-base), 0px 0px 0px 4px var(--color-semintic-g2-600);
+      border: 1px solid var(--color-semintic-g2-400);
+    }
+
+    &--disabled {
+      color: var(--color-semintic-g2-400);
+      background-color: var(--color-base);
+      border: 1px solid var(--color-semintic-g2-25);
+      cursor: default;
+      pointer-events: none;
+
+      svg {
+        border: 2px solid var(--color-primary-25); 
+      }
+    }
+  }
+}

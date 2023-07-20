@@ -1,0 +1,78 @@
+.pgleaverequests {
+
+  &--details {
+
+    &__nav-link-ttip {
+
+      :before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 50%;
+        left: -4px;
+        height: 12px;
+        width: 6px;
+        transform: translateY(-50%);
+        background-image: url('../../images/icons/bottom-left-center.svg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+  
+      &--inverse {
+        top: -15px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: max-content;
+        background-color: var(--color-base);
+  
+        &:before {
+          position: absolute;
+          display: block;
+          content: "";
+          bottom: -5px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          height: 6px;
+          width: 12px;
+          background-image: url('../../images/icons/bottom-center-inverse.svg');
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+      }
+
+    #n-leaves {
+
+      &:before {
+        position: absolute;
+        display: block;
+        content: "";
+        height: 24px;
+        top: 16px;
+        left: 28px;
+        width: 24px;
+        background-image: url('../../images/icons/calendar.svg');
+        z-index: 1;
+      }
+    }
+  
+    #n-employees {
+  
+      &:before {
+        position: absolute;
+        display: block;
+        content: "";
+        height: 24px;
+        top: 16px;
+        left: 28px;
+        width: 24px;
+        background-image: url('../../images/icons/profile-2user.svg');
+        z-index: 1;
+      }
+    }
+  }
+}

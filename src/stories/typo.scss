@@ -1,0 +1,50 @@
+.typo {
+  margin: 0;
+  display: inline;
+  color: var(--base-invert);
+  font-style: normal;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+  &__xl {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &__lg {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__md {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__sm {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__xs {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__light {
+    font-weight: 400;
+  }
+
+  &__normal {
+    font-weight: 500;
+  }
+
+  &__semibold {
+    font-weight: 600;
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+}

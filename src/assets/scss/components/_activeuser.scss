@@ -1,0 +1,111 @@
+.activeuser {
+  position: relative;
+
+  &__signedin {
+    position: relative;
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 12px;
+    align-items: center;
+    transition: 0.5s;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: -8px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 249px;
+      height: 1px;
+      background-color: var(--color-neutral-600);
+    }
+  }
+
+  &__image-wrapper {
+    height: 40px;
+    width: 40px;
+    margin: 0 0 0 12px;
+    border-radius: 40px;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+
+  &__prof {
+    position: relative;
+    max-width: 150px;
+    width: auto;
+    transition: 0.5s;
+  }
+
+  &__more-btn {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    right: 16px;
+    height: 40px;
+    width: 40px;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    border-radius: 8px;
+    z-index: 99;
+
+    .App-icon {
+      margin: 10px;
+      height: 20px;
+      width: 20px;
+      color: var(--color-base);
+      transform: rotate(180deg);
+      cursor: pointer;
+    }
+
+    &:hover{
+      background-color: var(--color-neutral-700);
+
+      > .activeuser__logout-ttip {
+        display: block;
+      }
+    }
+  }
+
+  &__logout-ttip {
+    position: absolute;
+    display: none;
+    background-color: var(--color-neutral-900);
+    padding: 8px 12px;
+    top: 50%;
+    right: -90px;
+    border-radius: 8px;
+    transform: translateY(-50%);
+    transition: 0.5s;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 50%;
+      left: -4px;
+      height: 12px;
+      width: 6px;
+      transform: translateY(-50%);
+      background-image: url('../../images/icons/bottom-left-center.svg');
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+}

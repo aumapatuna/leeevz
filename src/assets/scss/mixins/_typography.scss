@@ -1,0 +1,9 @@
+@mixin typography($elements) {
+  @each $element-name, $element in $elements {
+    #{$element-name} {
+      @each $key, $value in $element {
+        #{$key}: #{$value};
+      }
+    }
+  }
+}

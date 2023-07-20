@@ -1,0 +1,111 @@
+.leavedetails {
+  position: relative;
+  padding-top: 4px;
+  background-color: var(--color-neutral-100);
+
+  &__edet {
+    align-items: center;
+  }
+
+  &__wrap {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  &__frame {
+    position: relative;
+    display: block;
+    max-height: calc(84.3vh);
+    margin-bottom: 24px;
+    background-color: var(--color-base);
+    border: 1px solid var(--color-neutral-200);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &__back {
+    position: relative;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__summery {
+    display: block;
+  }
+
+  &__prof {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__attachment-wrap {
+    position: relative;
+  }
+
+  &__attachment-wrap {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 44px;
+    column-gap: 12px;
+  }
+
+  &__attachment-item-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-base);
+    border-top: 1px solid var(--color-neutral-200);
+
+    &--relative {
+      position: relative;
+      margin-top: 12px;
+    }  
+  }
+
+  .status {
+
+    &--pending {
+      padding: 2px 8px;
+      border-radius: 16px;
+      background-color: var(--color-semintic-g3-50);
+      color: var(--color-semintic-g3-700) !important;
+    }
+
+    &--approved {
+      padding: 2px 8px;
+      border-radius: 16px;
+      background-color: var(--color-semintic-g4-50);
+      color: var(--color-semintic-g4-700) !important;
+    }
+
+    &--rejected {
+      padding: 2px 8px;
+      border-radius: 16px;
+      background-color: var(--color-semintic-g2-25);
+      color: var(--color-semintic-g2-600) !important;
+    }
+  }
+
+  &__details-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 16px;
+    row-gap: 24px;
+  }
+}

@@ -1,0 +1,185 @@
+.leeevzform {
+  position: relative;
+  padding: 24px;
+
+  .mandatory {
+    margin-left: 4px;
+    color: var(--color-semintic-g2-600);
+  }
+
+  .App-icon {
+    position: absolute;
+    top: 54%;
+    right: 17px;
+    height: 20px;
+    width: 20px;
+    color: var(--color-neutral-500);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  &__section {
+    position: relative;
+    margin-bottom: 24px;
+
+    &--date {
+
+      .App-icon {
+        top: 58%;
+        height: 16px;
+        width: 16px;
+        color: var(--color-neutral-400);
+        transform: initial;
+      }
+    }
+
+    &--balance {
+      padding: 10px 0;
+      background-color: var(--color-primary-50);
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    &--away {
+
+      .leeevzform {
+        
+        &__field {
+          position: relative;
+
+          &--away {
+            display: flex;
+            align-items: center;
+            column-gap: 24px;
+          }
+
+          &--select {
+
+            &.disabled {
+              opacity: 0.5;
+              cursor: default;
+              pointer-events: none;
+
+              &+.App-icon {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    &--info {
+      padding: 16px;
+      background-color: var(--color-semintic-g3-50);
+    }
+
+    &__info {
+      color: var(--color-semintic-g3-700);
+      text-decoration: underline;
+      transition: 0.5s;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &--noleave {
+      padding: 10px;
+      background-color: var(--color-semintic-g2-25);
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  // Hiding some elements initially
+  #reqleave-remaining,
+  #reqleave-away,
+  #reqleave-info {
+    display: none;
+    transition: 0.5s;
+  }
+
+  #rl-wrapper {
+
+    &.rltype {
+
+      #reqleave-remaining,
+      #reqleave-away {
+        display: block;
+      }
+    }
+  }
+
+  #reqleave-info {
+    
+    &.show {
+      display: block;
+    }
+  }
+
+  .reruired-info {
+    display: none;
+    transition: 0.5s;
+  }
+
+  .required {
+
+    .App-icon {
+      top: 43%;
+    }
+
+    .reruired-info {
+      display: block;
+      padding-top: 4px;
+    }
+
+    input, select, textarea {
+      box-shadow: 0px 0px 0px 2px var(--color-base), 0px 0px 0px 4px var(--color-semintic-g2-600);
+      border: 1px solid var(--color-primary-300);
+    }
+  }
+
+  #reqleave-noleave + #reqleave-note + #reqleave-info,
+  #reqleave-noleave + #rreqleave-note {
+    display: none;
+  }
+
+  div#reqleave-noleave + div#reqleave-note {
+    display: none;
+  }
+
+  #btn-disabled {
+
+    #sendreq {
+      pointer-events: none;
+      opacity: 0.4;
+    }
+  }
+
+  /* Custom calendar widget */ 
+  &__calendar {
+
+    .todays-date {
+      position: absolute;
+      display: grid;
+      padding: 0 24px;
+      top: 130px;
+      left: 0;
+      width: 332px;
+      grid-template-columns: 2.23fr 1fr;
+      column-gap: 12px;
+      z-index: 9999;
+
+      .typo {
+        padding: 10px 14px;
+        border: 1px solid var(--color-neutral-300);
+        border-radius: 8px;
+      }
+    }
+  }
+}

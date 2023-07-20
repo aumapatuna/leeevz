@@ -1,0 +1,164 @@
+.rdrCalendarWrapper {
+  position: absolute;
+  display: block;
+  top: 70px;
+  left: 0;
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+  border-radius: 8px;
+  z-index: 999;
+
+  .rdrDateDisplayWrapper {
+    display: none;
+  }
+
+  .rdrMonthName {
+    display: none;
+  }
+
+  .rdrNextPrevButton {
+    margin: 0 41.5px;
+ }  
+  .rdrPprevButton {
+    height: 10px;
+    width: 5px;
+    background-color: transparent !important;
+    background-image: url('../../images/left_arrow.svg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  
+    i {
+      display: none !important;
+    }
+  }
+  
+  .rdrNextButton {
+    height: 10px;
+    width: 5px;
+    background-color: transparent !important;
+    background-image: url('../../images/left_arrow.svg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    transform: rotateY(180deg);
+  
+    i {
+      display: none !important;
+    }
+  }
+
+  .rdrMonthAndYearPickers {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--color-neutral-700);
+  }
+
+  .rdrWeekDay {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--color-neutral-800);
+  }
+
+  .rdrDayNumber {
+    top: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--color-neutral-800);
+  }
+
+  .rdrDay {
+
+    &.rdrDayToday {
+      // height: 40px;
+      // width: 40px;
+      // border-radius: 40px;
+      background-color: var(--color-neutral-100);
+      color: var(--color-neutral-800);
+    }
+
+    span {
+      color: var(--color-neutral-800);
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      border-radius: 40px;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .rdrDay {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+  }
+
+  .rdrDays {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+  .rdrStartEdge.rdrEndEdge, 
+  .rdrStartEdge,
+  .rdrEndEdge {
+    border-radius: 40px;
+  }
+
+  .rdrDayToday {
+
+    .rdrDayNumber {
+
+      span {
+        color: var(--color-neutral-800) !important;
+      }
+    }
+    .rdrStartEdge {
+      color: transparent !important;
+    }
+  }
+
+  .rdrMonth {
+    padding-top: 64px;
+  }
+
+  .rdrStartEdge {
+    left: 0;
+  }
+
+  .rdrEndEdge {
+    right: 0;
+  }
+
+  .rdrSelected, 
+  .rdrInRange, 
+  .rdrStartEdge, 
+  .rdrEndEdge {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .rdrDayHovered .rdrDayNumber:after{
+    content: '';
+    border: none !important;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+  }
+
+  .rdrDayStartPreview.rdrDayEndPreview {
+    border: none !important;
+    top: -4px !important;
+  }
+}

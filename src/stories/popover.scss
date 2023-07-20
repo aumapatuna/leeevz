@@ -1,0 +1,65 @@
+.popover {
+  position: absolute;
+  padding: 12px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 291px;
+  right: 0;
+  top: -28px;
+  opacity: 1;
+  transition: opacity .5s, z-index .5s;
+  z-index: 1;
+
+  &.hide{
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 12px;
+    width: 12px;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../assets/images/icons/bottom-center.svg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__text {
+    margin: 0 16px 0 0;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__close {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 16px;
+    width: 16px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+
+    .App-icon {
+      height: auto;
+      width: 100%;
+      filter: invert(1);
+    }
+  }
+}

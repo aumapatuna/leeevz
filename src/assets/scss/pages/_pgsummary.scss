@@ -1,0 +1,44 @@
+.pgsummary{
+  position: relative;
+  background-color: var(--color-neutral-100);
+
+  &__nouser {
+    position: relative;
+    height: 100vh;
+    background-color: var(--color-neutral-100);
+  }
+
+  &__nouser-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 552px;
+    height: auto;
+    padding: 122px 64px 132px;
+    background-color: var(--color-base);
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    overflow: hidden;
+
+    @media(min-width: 375px) and (max-width: 767px) {
+      width: 330px;
+      padding: 64px 48px;
+    }
+
+    .typo,
+    .link {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .error-header {
+    margin-bottom: 4px;
+    color: var(--color-neutral-800);
+  }
+
+  .error-description {
+    margin-bottom: 34px;
+    color: var(--color-neutral-600);
+  }
+}

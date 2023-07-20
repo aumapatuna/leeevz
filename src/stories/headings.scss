@@ -1,0 +1,59 @@
+.heading {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #101828;
+  font-style: normal;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+  &__h1 {
+    font-size: 72px;
+    line-height: 106px;
+    letter-spacing: -0.02em;
+  }
+
+  &__h2 {
+    font-size: 60px;
+    line-height: 88px;
+    letter-spacing: -0.02em;
+  }
+
+  &__h3 {
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+  }
+
+  &__h4 {
+    font-size: 36px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+  }
+
+  &__h5 {
+    font-size: 30px;
+    line-height: 44px;
+  }
+
+  &__h6 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &__light {
+    font-weight: 400;
+  }
+
+  &__normal {
+    font-weight: 500;
+  }
+
+  &__semibold {
+    font-weight: 600;
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+}

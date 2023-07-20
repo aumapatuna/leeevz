@@ -1,0 +1,78 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    //-- Alignment
+    .text#{$infix}-nowrap {
+      white-space: nowrap !important;
+    }
+    .text#{$infix}-pre-line {
+      white-space: pre-line !important;
+    }
+    .text#{$infix}-justify {
+      text-align: justify !important;
+    }
+    .text#{$infix}-left {
+      text-align: left !important;
+    }
+    .text#{$infix}-right {
+      text-align: right !important;
+    }
+    .text#{$infix}-center {
+      text-align: center !important;
+    }
+
+    //-- Transformation
+    .text#{$infix}-lowercase {
+      text-transform: lowercase !important;
+    }
+    .text#{$infix}-uppercase {
+      text-transform: uppercase !important;
+    }
+    .text#{$infix}-capitalize {
+      text-transform: capitalize !important;
+    }
+
+    //-- Style
+    .text#{$infix}-italic {
+      font-style: italic !important;
+    }
+
+    //-- Weight
+    .font-weight#{$infix}-normal {
+      font-weight: var(--font-weight-normal) !important;
+    }
+    .font-weight#{$infix}-medium {
+      font-weight: var(--font-weight-medium) !important;
+    }
+    .font-weight#{$infix}-bold {
+      font-weight: var(--font-weight-bold) !important;
+    }
+
+    //-- Size
+    .font-size#{$infix}-normal {
+      font-size: var(--font-size-base) !important;
+    }
+    .font-size#{$infix}-md {
+      font-size: var(--font-size-md) !important;
+    }
+    .font-size#{$infix}-lg {
+      font-size: var(--font-size-lg) !important;
+    }
+
+    //-- Decoration
+    .text#{$infix}-strikethrough {
+      text-decoration: line-through !important;
+    }
+    .text-decoration#{$infix}-none {
+      text-decoration: none;
+    }
+  }
+}
+
+//-- Truncate
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

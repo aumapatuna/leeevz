@@ -1,0 +1,81 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "proxy": "https://wjap10b65e.execute-api.us-east-1.amazonaws.com/dev",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.4",
+    "date-fns": "^2.29.3",
+    "http-proxy-middleware": "^2.0.6",
+    "js-cookie": "^3.0.1",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
+    "node-html-parser": "^5.3.3",
+    "react": "^17.0.2",
+    "react-cookie": "^4.1.1",
+    "react-date-range": "^1.4.0",
+    "react-dom": "^17.0.2",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "response": "^0.1.0",
+    "sass": "^1.53.0",
+    "svg-sprite": "^2.0.2",
+    "universal-cookie": "^4.0.4",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack4": "^6.5.9",
+    "@storybook/manager-webpack4": "^6.5.9",
+    "@storybook/node-logger": "^6.5.9",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.1.21",
+    "@storybook/testing-library": "0.0.13"
+  }
+}

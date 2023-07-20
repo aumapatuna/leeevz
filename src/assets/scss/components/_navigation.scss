@@ -1,0 +1,150 @@
+.navigation {
+  position: relative;
+
+  &__item {
+    position: relative;
+    padding: 8px 16px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+
+    &__sub {
+      // display: block;
+      height: auto;
+      background-color: var(--color-neutral-800);
+      border-radius: 10px;
+      opacity: 1;
+      transition: 0.5s;
+      
+      .navigation__nav-active {
+        background-color: transparent;
+      }
+
+      .navigation__item__li {
+
+        .navigation__nav-link {
+          padding-left: 36px;
+          color: var(--color-neutral-400);
+        }
+
+        .navigation__nav-active {
+          color: var(--color-base);
+        }
+      }
+    }
+
+    &.nav-hide {
+
+      .navigation__item__sub {
+        // display: none;
+        opacity: 0;
+        height: 0;
+      }
+
+      .navigation__item__li {
+        display: none;
+      }
+    }
+
+    #nav-leaves {
+      position: relative;
+      cursor: pointer !important;
+    }
+
+    &--user {
+      position: relative;
+
+      .navigation__nav-link {
+        padding-left: 12px !important;
+      }
+    }
+  }
+
+  &__nav-link-arrow {
+    position: absolute;
+    display: flex;
+    right: 16px;
+    top: auto;
+    width: 18px;
+    height: 9px;
+    align-items: center;
+
+    .App-icon {
+      transition: 0.5s;
+    }
+    
+    &.collapse {
+
+      .App-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__nav-link {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 12px;
+    padding: 8px 12px;
+    color: var(--color-neutral-400);
+    align-items: center;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: var(--color-neutral-700);
+      color: var(--color-neutral-100);
+      border-radius: 6px;
+      cursor: pointer;
+
+      + .navigation__nav-link-ttip {
+        display: none;
+      }
+
+      > .navigation__nav-link-ttip--inverse {
+        display: block;
+      }
+    }
+
+    &--profile {
+      grid-template-columns: 1fr 3.5fr;
+      padding: 8px 0;
+      pointer-events: none;
+    }
+
+    .App-icon {
+      height: 24px;
+      width: auto;
+    }
+  }
+
+  &__nav-link-name {
+    transition: 0.5s;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__nav-active {
+    background-color: var(--color-neutral-700);
+    color: var(--color-neutral-100);
+    border-radius: 6px;
+    cursor: default !important;
+  }
+
+  &__nav-link-ttip {
+    position: absolute;
+    display: none;
+    content: "";
+    top: 50%;
+    left: 78px;
+    padding: 8px 12px;
+    width: fit-content;
+    background-color: var(--color-neutral-900);
+    transform: translateY(-50%);
+    border-radius: 8px;
+  }
+}
